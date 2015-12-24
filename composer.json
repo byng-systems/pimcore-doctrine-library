@@ -1,5 +1,5 @@
 {
-    "name": "byng/pimcore-doctrine-library",
+    "name": "byng-systems/pimcore-doctrine-library",
     "type": "library",
     "description": "Byng pimcore doctrine library",
     "keywords": ["byng", "pimcore", "doctrine", "plugin", "library"],
