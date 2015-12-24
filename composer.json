@@ -1,0 +1,27 @@
+{
+    "name": "byng/pimcore-doctrine-library",
+    "type": "library",
+    "description": "Byng pimcore doctrine library",
+    "keywords": ["byng", "pimcore", "doctrine", "plugin", "library"],
+    "homepage": "https://github.com/byng-systems/pimcore-doctrine-library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Byng Developers",
+            "email": "asim@byng.co",
+            "homepage": "http://byng.co/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "doctrine/orm": "~2.5"
+    },
+    "autoload": {
+        "psr-4": {"Byng\\": "src/Byng"}
+    },
+    "scripts": {
+        "post-install-cmd": "Byng\\Pimcore\\Doctrine\\Composer\\CliManager::postInstall",
+        "post-update-cmd": "Byng\\Pimcore\\Doctrine\\Composer\\CliManager::postInstall"
+    }
+}
